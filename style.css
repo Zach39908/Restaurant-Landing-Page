@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Assistant';
+    src: url('./Assistant/Assistant-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Assistant';
+    margin: 0;
+}
+
+#content {
+    min-height: 100vh;
+}
+
+header {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background: no-repeat center/cover url('./ratatouille.jpg');
+}
+
+h1 {
+    align-self: center;
+    margin: 0.2em 0 0 0;
+    font-size: 3rem;
+    color: rgba(192, 0, 0, 0.818);
+}
+
+img {
+    align-self: center;
+    width: 200px;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        align-self: flex-end;
+        margin: 0.5em 1.5em 0 0;
+    }
+
+    img {
+        align-self: flex-end;
+        margin-right: 5.25em;
+    }
+}
