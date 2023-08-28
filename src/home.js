@@ -27,13 +27,24 @@ export function createNav(buttons) {
     return navBar;
 }
 
-export function createTile() {
-    let tiles;
+export function createTiles(tilesList) {
+    const tilesWrapper = document.createElement('div');
+    tilesWrapper.classList.add('tiles');
 
-    if(!(tiles = document.querySelector('.tiles'))) {
-        tiles = document.createElement('div');
-        tiles.classList.add('tiles');
-    }
+    tilesList.forEach(tile => tilesWrapper.appendChild(createTile(tile)));
+    return tilesWrapper;
+}
 
-    
+function createTile(tile) {
+    const newTile = document.createElement('div');
+    newTile.classList.add('tile');
+    newTile.classList.add(tile.type);
+
+    tile.elements.forEach(element => {
+        const newElement = document.createElement(element.tag);
+        newElement.textContent = element.text;
+        newTile.appendChild(newElement);
+    });
+
+    return newTile;
 }

@@ -30,6 +30,8 @@ body {
 
 #content {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -80,28 +82,22 @@ nav button {
 }
 
 .tiles {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-self: center;
+    width: min(100%, 1400px);
+    margin: 10px 0;
+    padding: 0 30px;
+    display: grid;
+    gap: 10px 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     background-color: var(--bg-main);
 }
 
-.tile {
-    width: 100%;
-    padding: 10px 30px;
-}
-
-.tile * {
+.home * {
     margin: 5px 0;
-    
 }
 
 @media (min-width: 700px) {
-    header {
-        height: 65vh;
-    }
-
     h1 {
         margin-right: 1em;
         font-size: 4rem;
@@ -122,10 +118,7 @@ nav button {
     }
 
     .tiles {
-        margin-top: 1em;
-    }
-
-    .tile {
-        width: min(45%, 600px);
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr;
     }
 }
