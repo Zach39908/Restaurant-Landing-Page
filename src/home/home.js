@@ -72,6 +72,7 @@ function buildHome() {
     tiles[0].elements.push(Element('h2', 'About Us'));
     tiles[0].elements.push(Element('p', homeInfo.about));
     tiles[1].elements.push(Element('h2', 'Location & Hours'));
+    tiles[1].elements.push(Element('p', homeInfo.location));
 
     for(const day in homeInfo.hours)
         tiles[1].elements.push(Element('p', `${day}: &nbsp ${homeInfo.hours[day]}`));
