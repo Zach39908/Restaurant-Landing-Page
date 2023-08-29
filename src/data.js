@@ -2,6 +2,10 @@ import dish1 from './menu/dish1.jpg';
 import dish2 from './menu/dish2.jpg';
 import dish3 from './home/ratatouille.jpg';
 import dish4 from './menu/dish4.jpg';
+import dish5 from './menu/dish5.jpg';
+import dish6 from './menu/dish6.jpg';
+import dish7 from './menu/dish7.jpg';
+import dish8 from './menu/dish8.jpg';
 
 export let homeInfo = {
     name: "gusteau's",
@@ -61,5 +65,37 @@ export let menu = [
         nestled atop a bed of citrus-infused quinoa, harmonizing flavors and \
         textures in every bite.`,
         image: dish4,
-    }
+    },
+    {
+        type: 'dish',
+        name: 'Bouillabaisse Marseillaise',
+        text: `A hearty fisherman's stew with a mix of tender seafood including \
+        fish, shrimp, mussels, and clams, simmered in a flavorful saffron-infused \
+        tomato broth.`,
+        image: dish5,
+    },
+    {
+        type: 'dish',
+        name: 'Crêpes Suzette',
+        text: `Thin crêpes bathed in a luscious orange-infused caramel sauce, \
+        flambéed with Grand Marnier tableside, and garnished with candied orange \
+        zest.`,
+        image: dish6,
+    },
+    {
+        type: 'dish',
+        name: 'Salade Niçoise',
+        text: `A vibrant composed salad featuring fresh mixed greens, seared \
+        tuna, hard-boiled eggs, green beans, olives, and potatoes, dressed with \
+        a zesty vinaigrette.`,
+        image: dish7,
+    },
+    {
+        type: 'dish',
+        name: 'Pain Perdu aux Framboises',
+        text: ` French toast made from brioche slices soaked in vanilla custard, \
+        pan-fried until golden, and topped with a compote of fresh raspberries \
+        and a dusting of powdered sugar.`,
+        image: dish8,
+    },
 ];
