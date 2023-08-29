@@ -1,6 +1,7 @@
 :root {
-    --bg-main: rgb(235, 235, 235);
-    --bg-accent: rgb(0, 1, 43);
+    --bg-main: rgb(224, 224, 224);
+    --bg-accent-dark: rgb(0, 1, 43);
+    --bg-accent-light: white;
     --bg-clear: rgba(255, 255, 255, 0);
 
     --border-main: rgba(255, 255, 255, 0.808);
@@ -11,7 +12,7 @@
 
 @font-face {
     font-family: 'Assistant';
-    src: url('../Assistant/Assistant-VariableFont_wght.ttf') format('truetype');
+    src: url('./Assistant/Assistant-VariableFont_wght.ttf') format('truetype');
     font-style: normal;
     font-weight: 500;
 }
@@ -24,7 +25,7 @@
 
 body {
     margin: 0;
-    font-family: 'Assistant';
+    font-family: 'Assistant', Verdana, Geneva, sans-serif;
     background-color: var(--bg-main);
 }
 
@@ -38,8 +39,8 @@ header {
     height: 55vh;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(0deg, var(--bg-accent), var(--bg-clear) 30%), 
-    url('./ratatouille.jpg');
+    background-image: linear-gradient(0deg, var(--bg-accent-dark), var(--bg-clear) 30%), 
+    url('./home/ratatouille.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,7 +70,7 @@ nav {
     padding: 0.5em;
     display: flex;
     justify-content: space-around;
-    background-color: var(--bg-accent);
+    background-color: var(--bg-accent-dark);
 }
 
 nav button {
@@ -87,14 +88,31 @@ nav button {
     margin: 10px 0;
     padding: 0 30px;
     display: grid;
-    gap: 10px 50px;
+    gap: 10px 15%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     background-color: var(--bg-main);
 }
 
-.home * {
+.tile * {
     margin: 5px 0;
+}
+
+.menu-heading {
+    grid-column: 1/-1;
+    margin-top: 10px;
+    justify-self: center;
+    font-size: 1.25rem;
+}
+
+.menu-dish {
+    padding: 10px;
+    background-color: var(--bg-accent-light);
+    border-radius: 7px;
+}
+
+.item-image {
+    width: 50%;
 }
 
 @media (min-width: 700px) {
@@ -120,5 +138,13 @@ nav button {
     .tiles {
         margin-top: 20px;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .home-info h2 {
+        font-size: 2rem;
+    }
+    
+    .home-info p {
+        font-size: 1.25rem;
     }
 }
