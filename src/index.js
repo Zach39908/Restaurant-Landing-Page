@@ -1,3 +1,4 @@
+import { homeInfo, menu, contactInfo } from './data.js';
 import loadHomePage from './home/home.js';
 import loadMenuPage from './menu/menu.js';
 import loadContactPage from './contact/contact.js';
