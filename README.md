@@ -8,7 +8,7 @@ Access the site [here](https://zach39908.github.io/Restaurant-Landing-Page/) <br
 <br>
 For running in your local environment, clone this repository and be sure have Node.JS installed. <br>
 <br>
-In the home directory for this project on your local file system, run the command `npm install` to install all necessary dependecies according to *package.json*. To launch the site, you can use the command `npm start` from the home directory of the project.
+In the home directory for this project on your local file system, run the command `npm install` to install all necessary dependencies according to *package.json*. To launch the site, you can use the command `npm start` from the home directory of the project.
 
 ## About This Site
 
