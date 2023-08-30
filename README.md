@@ -4,7 +4,7 @@ A fictional restaurant website featuring basic home, menu, and contact pages.
 
 ## How To Use
 
-Access the site [here]() <br>
+Access the site [here](https://zach39908.github.io/Restaurant-Landing-Page/) <br>
 <br>
 For running in your local environment, clone this repository and be sure have Node.JS installed. <br>
 <br>
