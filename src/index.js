@@ -1,5 +1,6 @@
 import loadHomePage from './home/home.js';
 import loadMenuPage from './menu/menu.js';
+import loadContactPage from './contact/contact.js';
 import './style.css';
 import Icon from './home/icon.png';
 
@@ -13,4 +14,6 @@ navBtns.forEach(btn => btn.addEventListener('click', e => {
         loadHomePage(Icon);
     if(e.target.textContent === 'Menu')
         loadMenuPage();
+    if(e.target.textContent === 'Contact')
+        loadContactPage();
 }));

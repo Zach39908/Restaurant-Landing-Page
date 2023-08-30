@@ -99,3 +99,14 @@ export let menu = [
         image: dish8,
     },
 ];
+
+export let contactInfo = {
+    phone: '+33 1 45 67 89 10',
+    email: 'contact@GusteausFake.com',
+    website: 'www.GusteausFake.com',
+    social: {
+        instagram: '@GusteausFake',
+        facebook: '/GusteausFake',
+        twitter: '@GusteausFake',
+    },
+};

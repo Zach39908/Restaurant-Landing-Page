@@ -141,11 +141,13 @@ nav button {
         grid-template-columns: 1fr 1fr;
     }
 
-    .home-info h2 {
+    .home-info h2,
+    .contact-info h2 {
         font-size: 2rem;
     }
     
-    .home-info p {
+    .home-info p,
+    .contact-info p {
         font-size: 1.25rem;
     }
 }
